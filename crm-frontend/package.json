@@ -1,0 +1,11 @@
+{
+  "name": "crm-frontend-wrapper",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix crm-frontend run dev",
+    "build": "npm --prefix crm-frontend run build",
+    "start": "npm --prefix crm-frontend run start",
+    "lint": "npm --prefix crm-frontend run lint"
+  }
+}
