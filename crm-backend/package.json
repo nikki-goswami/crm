@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "src/aap.js",
-  "scripts": {
-    "start": "node src/app.js",
-    "dev": "nodemon src/app.js",
-    "seed": "node src/seed.js"
-  },
+ "scripts": {
+  "start": "node src/app.js",
+  "dev": "nodemon src/app.js",
+  "seed": "node src/seed.js",
+  "build": "echo \"no build needed\""
+},
   "keywords": [],
   "author": "",
   "license": "ISC",
