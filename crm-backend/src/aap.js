@@ -8,7 +8,14 @@ const { errorHandler } = require('./middleware/error');
 const app = express();
 
 app.use(helmet());
-app.use(cors({ origin: process.env.CLIENT_URL || 'http://localhost:3000' }));
+const allowedOrigins = [
+  process.env.CLIENT_URL,
+  'https://crm-crm-frontend-one.vercel.app',
+  'http://localhost:3000',
+].filter(Boolean);
+
+app.use(cors({ origin: allowedOrigins }));
+
 app.use(express.json());
 
 app.get('/api/health', (req, res) => res.json({ ok: true }));
